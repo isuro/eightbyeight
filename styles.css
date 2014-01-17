@@ -1,0 +1,66 @@
+.piece{
+    display: inline-block;
+}
+
+#wrapper {
+    width: 800px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
+#board {
+    height: 448px;
+    width: 448px;
+    background-color: #ffffaa;
+    float: left;
+    border: 1px solid black;
+}
+#blockDock {
+    height: 760px;
+    width: 348px;
+    background-color: #ffffaa;
+    float:right;
+    /*border: 1px solid black;*/
+}
+.button {
+    background-color: lightblue;
+    clear: left;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 50px;
+}
+#buttons {
+    margin: auto;
+    clear: left;
+    padding: 10px;
+}
+.dropbox {
+    width:56px;
+    height:56px;
+    float:left;
+}
+.block {
+    width: 56px;
+    height: 56px;
+}
+#black-block {
+    background-color: black;
+}
+#white-block {
+    background-color: white;
+}
+
+/*
+Win condition: None of the blocks on the board are open: all of them have a piece in them.
+        **For later: enforce checkerboard
+    Every grid location on the board needs an open/full variable
+    Needs to be a function that toggles that when pieces are placed
+    Pieces need to know what squares it covers so those can be marked
+
+    jQuery UI snapback function?
+    No dragging outside the screen/blockdock/board
+    Change background color to not white
+*/
